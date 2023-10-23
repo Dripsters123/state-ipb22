@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 
-function Counter(){
+function Counter(props){
     const [result, setResult] = useState(0);
-    const [ratioChange, setRatioChange] = useState(1);
+
+    const [ratioChange, setRatioChange] = useState(props.defaultRatios);
   
   function addRatio(){
     setResult(result + parseInt(ratioChange));
