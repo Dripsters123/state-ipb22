@@ -1,5 +1,5 @@
 import Counter from "./Counter";
-
+import Check from "./Check";
 import Hello from "./Hello";
 
 function App() {
@@ -13,13 +13,14 @@ const vardiJSX = vardi.map((theName, index) =>{
   return <Hello defaultName={theName} key={index}/>
   
 })
-
+const check = [false];
 
 return(
   <div>
     
   {ratiosJSX}
   {vardiJSX}
+  <Check checkValue={check[0]}/>
  </div>
   
 )
