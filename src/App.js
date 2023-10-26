@@ -13,14 +13,17 @@ const vardiJSX = vardi.map((theName, index) =>{
   return <Hello defaultName={theName} key={index}/>
   
 })
-const check = [false];
+const check = [true,true,false];
+const checkJSX = check.map((theCheck, indexxx)=>{
+ return <Check checkValue={theCheck} key={indexxx}/>
+})
 
 return(
   <div>
     
   {ratiosJSX}
   {vardiJSX}
-  <Check checkValue={check[0]}/>
+  {checkJSX}
  </div>
   
 )
